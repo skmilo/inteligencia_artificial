@@ -1,0 +1,62 @@
+
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ 
+package piedra;
+
+/**
+ *
+ * @author skmilo
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+import java.util.Random;
+public class Piedra {
+    private static BufferedReader br;
+
+    
+    public static void main(String[] args) {
+        
+        
+ int numUsuario;
+ int numMaquina;
+System.out.println("digite su opciion 1piedra 2papel 3 tijera");
+int n;
+
+  
+    
+Scanner sc = new Scanner(System.in);
+System.out.print("Introduzca un número entero: ");
+n = sc.nextInt();
+if (n==0){
+    
+    System.out.println( "ingreso piedra, " + n);    
+}else 
+    if (n==1){
+    
+    System.out.println( "ingreso papel, " + n);
+
+} else 
+        if (n==2){
+    
+    System.out.println( "ingreso papel, " + n);
+
+            
+    }  
+ 
+}
+         //  numMaquina=(int)(Math.random()*3);
+        //   System.out.println("opcion"+numMaquina);
+}  
+    
+    
+    
+    
+    
+
+    
+
+    
+
