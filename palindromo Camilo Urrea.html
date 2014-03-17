@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>palindromo</title>
+</head>
+<script>
+	var texto = prompt("ingrese un texto");//capturo texto ingresado por el usuario
+	var palabra = texto.split("");//convierto esa palabra de string a arreglo y en cada poscision una letra 
+	var otra = [""] ;//declaracion de variable otra como un arreglo vacio 
+	var j = 0 // declaracion de variable j inicializandolo en 0 
+
+
+	for(var i=palabra.length-1; i>=0;i--)//recorre la posicion de el arreglo palabra 
+	{
+		//console.log(" palabra"+ palabra[i]);//imprimir el arreglo 
+		
+		otra[j] = palabra[i];//arreglo palabra en la ultima posicion se le asigna a otra en la primera posicion 
+		j ++;//aumento de ortra 
+
+	}
+
+	otra = otra.toString(); //convertimos otra de arreglo a string y se sobrescribe la variable 
+	palabra = palabra.toString();//convertimos palabra de arreglo a string y se sobreescribe la variable 
+
+	if(palabra == otra)//comparamos los string obtenidos palabra y otra si son iguales 
+	{
+		console.log("Es aplindromo");//si son iguales palindromo
+	}else
+	{
+
+		console.log("no es palindromo");//si no no es palindromo
+	}
+
+
+
+
+</script>
+
+<body>
+<body/>
+</html>
